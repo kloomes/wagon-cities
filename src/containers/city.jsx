@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const City = () => {
+const City = (props) => {
   return (
-    <div>London</div>
+    <li className="list-group-item">
+      {props.city.name}
+    </li>
   );
 };
 
