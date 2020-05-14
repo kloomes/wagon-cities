@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import City from '../containers/city';
 
 class CityList extends Component {
+  componentWillMount() {
+
+  }
+
   render() {
     return this.props.cities.map((city) => {
       return (
