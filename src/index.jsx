@@ -6,12 +6,14 @@ import { createStore, combineReducers } from 'redux';
 
 // internal modules
 import citiesReducer from './reducers/cities_reducer';
+import selectedCityReducer from './reducers/selected_city_reducer';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
 // State and reducers
 const reducers = combineReducers({
-  cities: citiesReducer
+  cities: citiesReducer,
+  activeCity: selectedCityReducer
 });
 
 // render an instance of the component in the DOM
